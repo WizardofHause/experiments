@@ -7,9 +7,9 @@ export default function Root() {
         fetch("/api/hello")
             .then((r) => r.json())
             .then((data) => setCount(data.count));
-            console.log(count)
     }, []);
 
+    console.log(count)
     return (
         <>
             <div id="sidebar">
@@ -41,10 +41,10 @@ export default function Root() {
                 <nav>
                     <ul>
                         <li>
-                            <a href={`/contacts/1`}>Your Name</a>
+                            <a href={`LINK`}>ROUTE 1</a>
                         </li>
                         <li>
-                            <a href={`/contacts/2`}>Your Friend</a>
+                            <a href={`LINK2`}>ROUTE 2</a>
                         </li>
                     </ul>
                 </nav>
