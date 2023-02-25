@@ -28,7 +28,6 @@ export async function loader({ params }) {
 // so <Contact/> doesn't have to manage error/loading states
 
 export default function Contact() {
-    const { contact } = useLoaderData();
     // const contact = {
     //     first: "Your",
     //     last: "Name",
@@ -37,6 +36,7 @@ export default function Contact() {
     //     notes: "Some notes",
     //     favorite: true,
     // };
+    const { contact } = useLoaderData();
 
     return (
         <div id="contact">
